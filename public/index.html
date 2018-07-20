@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Mini Twitter</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+
+	<!-- GOOGLE FONTS -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
+
+	<!-- FONTAWESOME -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+	<!-- JS -->
+	<script src="dist/app.js"></script>
+	
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/app.css">
+</head>
+<body>
+	
+<!-- NAVBAR -->
+<nav class="navbar">
+  <a class="navbar-brand" href="#">
+  	<i class="fab fa-twitter d-inline-block align-top"></i>
+       Camipi
+  </a>
+</nav>
+
+<!-- CONTENT -->
+<div class="content">
+	<div class="container">
+		<div class="row">
+			<!-- COLUMNA IZQUIERDA -->
+				<div class="col-md-4">
+					<div class="content__profile">
+						<div class="content__profile-hero"></div>
+						<div class="content__profile-info">
+							<h4>Camila Pirela</h4>
+							<h5>@capirepeti</h5>
+						</div>
+						<div class="row content__profile-info">
+							<div class="col-4 content__profile-tweet">
+								<h6>Tweets</h6>
+								<p>1</p>
+							</div>
+							<div class="col-4 content__profile-following">
+								<h6>Following</h6>
+								<p>1</p>
+							</div>
+							<div class="col-4 content__profile-followers">
+								<h6>Followers</h6>
+								<p>1</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="content__twitear">
+						<h4>¿Qué está pasando?</h4>
+						<div class="content__twitear-text">
+							<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+						</div>						
+						<button>Tweet</button>
+					</div>
+				</div>
+			<!-- COLUMNA DERECHA -->
+				<div class="col-md-8">
+					<div class="row content__tweet">
+						<div class="col-3 content__tweet-image">
+							<img src="" alt="">
+						</div>
+						<div class="col-6 content__tweet-name">
+							<h5>Pepita María</h5>
+							<h6>@peperan</h6>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore nulla totam, optio aperiam pariatur explicabo harum! Aliquam sapiente aspernatur deleniti, quod similique porro, aliquid quae autem harum, dolorum qui ad.</p>							
+						</div>
+						<div class="col-3">
+							<p>15 min</p>
+						</div>
+						<div class="col-12 content__tweet-line"></div>
+						<div class="row">
+							<div class="col-12 content__tweet-count">
+								<i class="col-3 far fa-comment"></i>
+								<i class="col-3 fas fa-retweet"></i>
+								<i class="col-3 far fa-heart"></i>
+								<i class="col-3 far fa-envelope"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+	</div>
+</div>
+	
+</body>
+</html>
