@@ -1,9 +1,12 @@
 .content__profile {
 	background-color: #ffffff;
 	border-radius: 3px;
-	padding: 5vh;
+	padding-top: 5vh;
+	padding-right: 5vh;
+	padding-left: 5vh;
+	padding-bottom: 2vh;
 	margin-top: 5vh;
-	margin-bottom: 2vh;
+	margin-bottom: 1vh;
 }
 
 .content__profile-info h4 {
@@ -15,7 +18,7 @@
 .content__profile-info h5 {
 	font-weight: 300;
 	color: #808080;
-	margin-bottom: 7vh;
+	margin-bottom: 3vh;
 }
 
 .content__profile-tweet h6 {
@@ -47,4 +50,11 @@
 	border-radius-top: 3px;
 	border-radius-bottom: 0;
 	height: 30vh;
+}
+
+.content__profile-line {
+	height: 1px;
+	background-color: #B3B3B3;
+	margin-top: .5vh;
+	margin-bottom: 3vh;
 }
