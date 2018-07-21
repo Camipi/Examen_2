@@ -1,7 +1,9 @@
 .content__tweet {
 	background-color: #ffffff;
 	border-radius: 3px;
-	padding: 5vh;
+	padding-top: 5vh;
+	padding-left: 5vh;
+	padding-right: 5vh;
 	margin-top: 5vh;
 }
 
@@ -22,4 +24,10 @@
 
 .fa-heart-red {
 	color: #440066;
+}
+
+.content__tweet-text {
+	color: #808080;
+	font-weight: 300;
+	font-size: .9rem;
 }
