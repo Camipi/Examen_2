@@ -5,6 +5,7 @@
 	padding-left: 5vh;
 	padding-right: 5vh;
 	margin-top: 5vh;
+	margin-bottom: 3vh;
 }
 
 .content__tweet-line {
@@ -23,11 +24,41 @@
 }
 
 .fa-heart-red {
-	color: #440066;
+	color: red;
 }
 
 .content__tweet-text {
 	color: #808080;
 	font-weight: 300;
 	font-size: .9rem;
+}
+
+.content_tweet-delete button {
+	background: none;
+	border: none;
+	color: #808080;
+}
+
+.content__tweet-count a {
+	text-decoration: none;
+	color: #808080;
+}
+
+.content__tweet-picture .img-fluid {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 2vh;
+}
+
+.content__tweet-name h5 {
+	font-weight: 700;
+}
+
+.content__tweet-name h6 {
+	font-weight: 300;
+	color: #808080;
+}
+
+.content__tweet-time {
+	color: #808080;
 }

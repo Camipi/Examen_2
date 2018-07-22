@@ -32,7 +32,7 @@
 <nav class="navbar fixed-top">
   <a class="navbar-brand" href="#">
   	<i class="fab fa-twitter d-inline-block align-top"></i>
-       Camipi
+       Capirepeti
   </a>
 </nav>
 
@@ -41,9 +41,11 @@
 	<div class="container">
 		<div class="row">
 			<!-- COLUMNA IZQUIERDA -->
-				<div class="col-md-4">
+				<div class="col-sm-12 col-md-4">
 					<div class="content__profile">
-						<div class="content__profile-hero"></div>
+						<div class="content__profile-picture">
+							<img class="img-fluid" src="../src/images/camila_pirela.png" alt="imagen de perfil">
+						</div>
 						<div class="content__profile-info">
 							<h4>Camila Pirela</h4>
 							<h5>@capirepeti</h5>
@@ -68,16 +70,26 @@
 					<div class="content__twitear">
 						<h4>¿Qué está pasando?</h4>
 						<div class="content__twitear-text">
-							<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+							<form action="	" class="content__twitear-text">
+								<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+								<select class="form-control" id="exampleFormControlSelect1">
+							    	<option value="">Imagen 1</option>
+							    	<option value="">Imagen 2</option>
+							    	<option value="">Imagen 3</option>
+							    	<option value="">Imagen 4</option>
+							    	<option value="">Imagen 5</option>
+							    </select>
+							    <button>Tweet</button>
+						    </form>
 						</div>						
-						<button>Tweet</button>
-					</div>
-				</div>
+					</div>	
+				</div><!-- FIN COLUMNA IZQUIERDA -->
+
 			<!-- COLUMNA DERECHA -->
-				<div class="col-md-8">
-					<div class="row content__tweet">
-						<div class="col-3 content__tweet-image">
-							<img src="" alt="">
+				<div class="col-sm-12 col-md-8">
+					<div class="row content__tweet">  
+						<div class="col-2 content__tweet-picture">
+							<img class="img-fluid" src="../src/images/camila_pirela.png" alt="imagen de perfil">
 						</div>
 						<div class="col-6 content__tweet-name">
 							<h5>Pepita María</h5>
@@ -86,18 +98,21 @@
 						<div class="col-3 content__tweet-time">
 							<p>15 min</p>
 						</div>
+						<div class="col-1 content_tweet-delete">
+							<button><i class="fas fa-times"></i></button>
+						</div>
 						<div class="col-12 content__tweet-text">
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore nulla totam, optio aperiam pariatur explicabo harum! Aliquam sapiente aspernatur deleniti, quod similique porro, aliquid quae autem harum, dolorum qui ad.</p>
 						</div>						
-						<div class="col-12 content__tweet-line"></div>						
-						<div class="row content__tweet-count justify-content-center">
-							<p><i class="col-3 far fa-comment"></i>  1</p>
-							<p><i class="col-3 fas fa-retweet"></i>  1</p>
-							<p><i class="col-3 far fa-heart fa-heart-red"></i>  1</p>
-							<p><i class="col-3 far fa-envelope"></i>  1</p>
-						</div>						
+						<div class="col-12 content__tweet-line"></div>
+						<div class="row col-12 content__tweet-count justify-content-center">
+							<p><a href="#"><i class="col-3 far fa-comment"></i></a>  1</p>				
+							<p><a href="#"><i class="col-3 fas fa-retweet"></i></a>  1</p>							
+							<p><a href="#"><i class="col-3 far fa-heart fa-heart-red"></i></a>  1</p>
+							<p><a href="#"><i class="col-3 far fa-envelope"></i></a>  1</p>							
+						</div>
 					</div>
-				</div>
+				</div><!-- FIN COLUMNA DERECHA -->
 		</div>
 	</div>
 </div>

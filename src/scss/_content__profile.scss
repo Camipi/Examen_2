@@ -45,16 +45,14 @@
 	color: #808080;	
 }
 
-.content__profile-hero {
-	background-color: #440066;
-	border-radius-top: 3px;
-	border-radius-bottom: 0;
-	height: 30vh;
-}
-
 .content__profile-line {
 	height: 1px;
 	background-color: #B3B3B3;
 	margin-top: .5vh;
 	margin-bottom: 3vh;
+}
+
+.content__profile .img-fluid {
+	max-width: 100%;
+	height: auto;
 }
