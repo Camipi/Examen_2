@@ -28,7 +28,7 @@
 	color: #808080;
 }
 
-#heart {
+.heart {
 	color: #808080;
 }
 
@@ -65,4 +65,8 @@
 
 .content__tweet-time {
 	color: #808080;
+}
+
+.content__tweet-count span {
+	margin-left: 1vh;
 }

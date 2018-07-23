@@ -7,6 +7,29 @@ $( document ).ready(function() {
 		$(this).parent().parent().remove();
     });
 
+	////Cambia clase del boton corazón
+	$(document).on('click', '.heart', function(e) {
+		$(this).toggleClass('fa-heart-red');
+		$(this).siblings().text();
+
+		var valorInicial = $(this).siblings().text();
+
+		var x = parseInt(valorInicial) + 1;
+
+		$(this).siblings().text(x);
+
+		var contador = $(this).siblings().text(x);
+
+		if(contador == 0){
+			$(this).toggleClass('fa-heart-red');
+		}
+
+		
+	});
+
+
+
+
     $('#btnTweet').on('click', function(event){
 		event.preventDefault();
 		
@@ -36,14 +59,16 @@ $( document ).ready(function() {
 			+ '</div>'
 			+ '<div class="col-12 content__tweet-line">' + '</div>'
 			+ '<div class="row col-12 content__tweet-count justify-content-center">' 
-			+ 	'<p><a href="#""><i class="col-3 far fa-comment"></i></a>  1</p>'
-			+ 	'<p><a href="#""><i class="col-3 fas fa-retweet"></i></a>  1</p>'
-			+ 	'<p><a href="#""><i id="heart" class="col-3 heart far fa-heart fa-heart-red"></i></a>  1</p>'
-			+ 	'<p><a href="#""><i class="col-3 far fa-envelope"></i></a>  1</p>'
+			+ 	'<p><a href="#"><i class="col-3 far fa-comment"></i></a></p>'
+			+ 	'<p><a href="#"><i class="col-3 fas fa-retweet"></i></a></p>'
+			+ 	'<p><i class="col-3 heart far fa-heart"></i><span id="likes_' + contador + '">0</span></p>'
+			+ 	'<p><a href="#"><i class="col-3 far fa-envelope"></i></a></p>'
 			+ '</div>' 
 			+ '</div>')
 		});
-  
+  	
+
+
 
    
 

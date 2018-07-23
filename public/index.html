@@ -74,13 +74,7 @@
 								<input type="text" class="content__twitear-name" id="twitear_name" value="Camila" placeholder="   Tu nombre"></input>
 								<input type="text" class="content__twitear-name" id="twitear_nickname" value="@capirepeti" placeholder="   @nickname"></input>
 								<textarea class="form-control" id="tweet-text" rows="3" placeholder="Tu tweet"></textarea>
-								<select class="form-control" id="exampleFormControlSelect1">
-							    	<option value="">Imagen 1</option>
-							    	<option value="">Imagen 2</option>
-							    	<option value="">Imagen 3</option>
-							    	<option value="">Imagen 4</option>
-							    	<option value="">Imagen 5</option>
-							    </select>
+								<input type="file" class="form-control-file" id="elegirImagen">
 							    <input id="btnTweet" class="content__twitear-button" type="submit" name="Tweet" value="Tweet"></input>
 						    </form>
 						</div>						
@@ -111,7 +105,7 @@
 						<div class="row col-12 content__tweet-count justify-content-center">
 							<p><a href="#"><i class="col-3 far fa-comment"></i></a>  1</p>				
 							<p><a href="#"><i class="col-3 fas fa-retweet"></i></a>  1</p>							
-							<p><a href="#"><i class="col-3 far fa-heart fa-heart-red"></i></a>  1</p>
+							<p><i id="heart" class="col-3 heart far fa-heart fa-heart-red"></i><span>1</span></p>
 							<p><a href="#"><i class="col-3 far fa-envelope"></i></a>  1</p>							
 						</div>
 					</div>	-->				
