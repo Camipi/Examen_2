@@ -23,6 +23,15 @@
 	float: left;
 }
 
+.content__tweet-count a {
+	text-decoration: none;
+	color: #808080;
+}
+
+#heart {
+	color: #808080;
+}
+
 .fa-heart-red {
 	color: red;
 }
@@ -36,11 +45,6 @@
 .content_tweet-delete button {
 	background: none;
 	border: none;
-	color: #808080;
-}
-
-.content__tweet-count a {
-	text-decoration: none;
 	color: #808080;
 }
 

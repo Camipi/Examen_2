@@ -14,15 +14,15 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
 
+	<!-- JS -->
+	<script src="../src/js/app.js"></script>
+
 	<!-- GOOGLE FONTS -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
 
 	<!-- FONTAWESOME -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
-	<!-- JS -->
-	<script src="dist/app.js"></script>
-	
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="css/app.css">
 </head>
@@ -70,8 +70,10 @@
 					<div class="content__twitear">
 						<h4>¿Qué está pasando?</h4>
 						<div class="content__twitear-text">
-							<form action="	" class="content__twitear-text">
-								<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+							<form class="content__twitear-form">
+								<input type="text" class="content__twitear-name" id="twitear_name" value="Camila" placeholder="   Tu nombre"></input>
+								<input type="text" class="content__twitear-name" id="twitear_nickname" value="@capirepeti" placeholder="   @nickname"></input>
+								<textarea class="form-control" id="tweet-text" rows="3" placeholder="Tu tweet"></textarea>
 								<select class="form-control" id="exampleFormControlSelect1">
 							    	<option value="">Imagen 1</option>
 							    	<option value="">Imagen 2</option>
@@ -79,15 +81,16 @@
 							    	<option value="">Imagen 4</option>
 							    	<option value="">Imagen 5</option>
 							    </select>
-							    <button>Tweet</button>
+							    <input id="btnTweet" class="content__twitear-button" type="submit" name="Tweet" value="Tweet"></input>
 						    </form>
 						</div>						
 					</div>	
 				</div><!-- FIN COLUMNA IZQUIERDA -->
 
-			<!-- COLUMNA DERECHA -->
-				<div class="col-sm-12 col-md-8">
-					<div class="row content__tweet">  
+			<!-- COLUMNA DERECHA -->				
+				<div id="tweet" class="col-sm-12 col-md-8">
+					<!-- TWEET -->
+					<!--<div class="row content__tweet">  
 						<div class="col-2 content__tweet-picture">
 							<img class="img-fluid" src="../src/images/camila_pirela.png" alt="imagen de perfil">
 						</div>
@@ -99,7 +102,7 @@
 							<p>15 min</p>
 						</div>
 						<div class="col-1 content_tweet-delete">
-							<button><i class="fas fa-times"></i></button>
+							<button class="btnDelete"><i class="fas fa-times"></i></button>
 						</div>
 						<div class="col-12 content__tweet-text">
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore nulla totam, optio aperiam pariatur explicabo harum! Aliquam sapiente aspernatur deleniti, quod similique porro, aliquid quae autem harum, dolorum qui ad.</p>
@@ -111,7 +114,7 @@
 							<p><a href="#"><i class="col-3 far fa-heart fa-heart-red"></i></a>  1</p>
 							<p><a href="#"><i class="col-3 far fa-envelope"></i></a>  1</p>							
 						</div>
-					</div>
+					</div>	-->				
 				</div><!-- FIN COLUMNA DERECHA -->
 		</div>
 	</div>

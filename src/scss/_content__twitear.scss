@@ -11,7 +11,7 @@
 	font-size: 1.2rem;
 }
 
-.content__twitear button {
+.content__twitear-button {
 	width: 100%;
 	margin-top: 3vh;
 	color: #ffffff;
@@ -19,6 +19,14 @@
 	padding: 1vh;
 	background-color: #440066;
 	font-weight: 700;
+}
+
+.content__twitear-name {
+	border: solid 1px #440066;
+	margin-top: 3vh;
+	width: 100%;
+	border-radius: .25rem;
+	height: 3rem;
 }
 
 .content__twitear textarea {
