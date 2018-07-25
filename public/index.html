@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 	<meta charset="UTF-8">
 	<title>Mini Twitter</title>
@@ -17,13 +17,16 @@
 	<!-- JS -->
 	<script src="../src/js/app.js"></script>
 
+	<!-- SWEET ALERT -->
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 	<!-- GOOGLE FONTS -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
 
 	<!-- FONTAWESOME -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
-	<!-- CSS -->
+		<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="css/app.css">
 </head>
 <body>
@@ -70,7 +73,7 @@
 					<div class="content__twitear">
 						<h4>¿Qué está pasando?</h4>
 						<div class="content__twitear-text">
-							<form class="content__twitear-form">
+							<form id="content__twitear-form" class="content__twitear-form">
 								<input type="text" class="content__twitear-name" id="twitear_name" placeholder="   Tu nombre"></input>
 								<input type="text" class="content__twitear-name" id="twitear_nickname" placeholder="   @nickname"></input>
 								<textarea class="form-control" id="tweet-text" rows="3" placeholder="Tu tweet"></textarea>

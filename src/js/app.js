@@ -6,6 +6,23 @@ $( document ).ready(function() {
 	//Elimina el  tweet, haciendo click al botón "X"
 	$(document).on('click','.btnDelete' , function() {
 		$(this).parent().parent().remove();
+
+		swal({
+		  title: "¿Estás seguro",
+		  text: "Una vez que lo borres, no podrás recuperarlo",
+		  icon: "warning",
+		  buttons: true,
+		  dangerMode: true,
+		})
+		.then((willDelete) => {
+		  if (willDelete) {
+		    swal("Oh! ¡Tu tweet ha sido borrado!", {
+		      icon: "success",
+		    });
+		  } else {
+		    swal("¡Tu tweet está a salvo!");
+		  }
+		});
     });
 
 	////Cambia clase del boton corazón
@@ -26,7 +43,7 @@ $( document ).ready(function() {
 	//Envia tweet con informacion
     $('#btnTweet').on('click', function(event){
 		event.preventDefault();
-		
+
 		//Crea un ID dinámico para cada tweet
 		contador = contador + 1;
 		
@@ -38,6 +55,10 @@ $( document ).ready(function() {
 
 		  if (input.files && input.files[0]) {
 		    var reader = new FileReader();
+
+		    //Resetea el contenido del formulario
+			/*$(textName, tesxtNickname, textTweet).val(”);
+		    	$(this)[0].reset();*/
 
 		    reader.onload = function(e) {
 		      
@@ -70,13 +91,14 @@ $( document ).ready(function() {
 		    reader.readAsDataURL(input.files[0]);
 		  }
 
-		
+		  	
+
+
+		 		
 		});
-  	
 
+    
 
-
-   
 
 
 
