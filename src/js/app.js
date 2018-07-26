@@ -1,11 +1,11 @@
 $( document ).ready(function() {
 
-
 	var contador = 0;
 
 	//Elimina el  tweet, haciendo click al botón "X"
 	$(document).on('click','.btnDelete' , function() {
 		
+		//Agrega sweet alert
 		swal({
 		  title: "¿Estás seguro",
 		  text: "Una vez que lo borres, no podrás recuperarlo",
@@ -45,8 +45,6 @@ $( document ).ready(function() {
     $('#btnTweet').on('click', function(event){
 		event.preventDefault();
 
-		//$('#content__twitear-form')[0].reset();
-
 		//Crea un ID dinámico para cada tweet
 		contador = contador + 1;
 		
@@ -58,10 +56,6 @@ $( document ).ready(function() {
 
 		  if (input.files && input.files[0]) {
 		    var reader = new FileReader();
-
-		    
-			/*$(textName, tesxtNickname, textTweet).val(”);
-		    	*/
 
 		    reader.onload = function(e) {
 		      
@@ -88,7 +82,10 @@ $( document ).ready(function() {
 				+ 	'<p><i class="col-3 heart far fa-heart"></i><span id="likes_' + contador + '">0</span></p>'
 				+ 	'<p><a href="#"><i class="col-3 far fa-envelope"></i></a></p>'
 				+ '</div>' 
-				+ '</div>')
+				+ '</div>');
+
+				//Resetea el formulario
+				$('#content__twitear-form')[0].reset();
 			    }
 
 		    reader.readAsDataURL(input.files[0]);
