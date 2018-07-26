@@ -54,6 +54,7 @@ $( document ).ready(function() {
 		var input = document.getElementById('elegirImagen') ;
 		var imagen = "";
 
+
 		  if (input.files && input.files[0]) {
 		    var reader = new FileReader();
 
@@ -88,7 +89,14 @@ $( document ).ready(function() {
 				$('#content__twitear-form')[0].reset();
 			    }
 
+			    
+
+
+			    swal("Tu Tweet ha sido enviado");
+
 		    reader.readAsDataURL(input.files[0]);
+		  }else {
+		  	swal("No has seleccionado una imagen");
 		  }
 
 		  	
