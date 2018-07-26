@@ -19,7 +19,7 @@ $( document ).ready(function() {
 
 		    swal("Oh! ¡Tu tweet ha sido borrado!", {
 		      icon: "success",
-		    });
+		    });  
 		  } else {
 		    swal("¡Tu tweet está a salvo!");
 		  }
@@ -37,7 +37,7 @@ $( document ).ready(function() {
 
 		$(this).siblings().text(valor);
 		
-		$(this).addClass('fa-heart-red');
+		$(this).addClass('fa-heart-red'); 
 		
 	});
 
